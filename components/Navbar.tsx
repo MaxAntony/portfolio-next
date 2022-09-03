@@ -37,7 +37,7 @@ export const Navbar: FC = () => {
         <div className="flex flex-col h-full w-full justify-between">
           <div>
             <Image layout="responsive" src={imageProgrammer} alt='programmer' />
-            <ul className='mb-14 flex flex-col w-full mt-14'>
+            <ul className='flex flex-col w-full mt-14'>
               {pagesSpanish.map(({ name, path }) => (
                 <li key={path} className='cursor-pointer text-center text-xl '>
                   <Link href={path} passHref>
