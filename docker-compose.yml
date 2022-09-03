@@ -47,3 +47,7 @@ services:
       - "3000"
     networks:
       - public_web
+
+networks:
+  public_web:
+    name: public_web
