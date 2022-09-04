@@ -9,7 +9,7 @@ import Document, {
 export default class CustomDocument extends Document {
   render() {
     return (
-      <Html>
+      <Html lang='es-PE'>
         <Head>
           <meta name="application-name" content="Max Antony" />
           <meta name="description" content="Pagina personal de Max Antony" />
@@ -30,6 +30,7 @@ export default class CustomDocument extends Document {
             name='viewport'
             content='minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover'
           />
+          {/*Google fonts: Poppins*/}
           <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
         </Head>
         <body>
