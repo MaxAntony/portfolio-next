@@ -26,7 +26,7 @@ const About = () => {
           </p>
           <p className='mb-4'>
             Tambien cuento con habilidades de diseño y marketing para la creacion de campañas en redes sociales para la
-            visibilidad de la marca a potenciales clientes.
+            visibilidad de la marca a potenciales sus clientes.
           </p>
           <p className=' '>
             Durante el tiempo que llevo trabajando he adquirido las habilidades y conocimientos para crear soluciones de
