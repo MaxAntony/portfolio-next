@@ -20,6 +20,7 @@ services:
     restart: always
     volumes:
       - ./certs:/etc/nginx/certs:rw
+      - ./acme:/etc/acme.sh
       - /var/run/docker.sock:/var/run/docker.sock:ro
     volumes_from:
       - nginx-proxy:rw
