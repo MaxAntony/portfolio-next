@@ -13,6 +13,8 @@ export default class CustomDocument extends Document {
         <Head>
           <meta name="application-name" content="Max Antony" />
           <meta name="description" content="Pagina personal de Max Antony" />
+          <meta name='author' content='Max Antony Paucar Ramirez' />
+          <meta name='keywords' content='Max Antony, Paucar Ramirez, Huancayo, Junin, Peru, Programacion, Desarrollador, Sistemas, Paginas web, Marketing' />
           <meta name="format-detection" content="telephone=no" />
           <meta name="mobile-web-app-capable" content="yes" />
           <meta name="theme-color" content="#000000" />
