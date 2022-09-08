@@ -2,7 +2,7 @@ import { IProject } from "@ts/interfaces";
 
 export const menuSections = [];
 
-export const image = 'https://miro.medium.com/max/1400/0*tXU7dbgRi5Cl-5hb.jpg';
+export const image = 'https://res.cloudinary.com/det8h7rxr/image/upload/v1662666048/portfolio/0_tXU7dbgRi5Cl-5hb_kzjrvk.jpg';
 
 export enum pages {
   home = '/',

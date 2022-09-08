@@ -9,9 +9,11 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['res.cloudinary.com']
+    domains: [
+      'res.cloudinary.com',
+    ]
   },
-  i18n: { locales: ['es'], defaultLocale: 'es' }
+  i18n: { locales: ['es'], defaultLocale: 'es' },
 }
 
 module.exports = withPWA(nextConfig)
