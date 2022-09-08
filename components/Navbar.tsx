@@ -1,5 +1,5 @@
 import { pagesSpanish } from "@utils/data";
-import Image from "next/image";
+import Image from "next/future/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { AnchorHTMLAttributes, FC, forwardRef, useState } from "react";
@@ -36,7 +36,7 @@ export const Navbar: FC = () => {
           }`}>
         <div className="flex flex-col h-full w-full justify-between">
           <div>
-            <Image layout="responsive" src={imageProgrammer} alt='programmer' />
+            <Image src={imageProgrammer} alt='programmer' />
             <ul className='flex flex-col w-full mt-14'>
               {pagesSpanish.map(({ name, path }) => (
                 <li key={path} className='cursor-pointer text-center text-xl '>
