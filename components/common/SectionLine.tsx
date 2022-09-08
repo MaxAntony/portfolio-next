@@ -1,6 +1,6 @@
 import { FC, ReactNode } from 'react';
 
-export const Section: FC<{ title: string, children: ReactNode }> = ({ children, title }) => {
+export const Section: FC<{ title: string; children: ReactNode }> = ({ children, title }) => {
   return (
     <div className='mb-20'>
       <div className='flex w-full items-center'>

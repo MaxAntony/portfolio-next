@@ -11,7 +11,8 @@ const Card: FC<CardProps> = ({ link, Icon, content }) => {
   return (
     <a
       href={link}
-      className='mb-4 ml-0 flex w-full flex-col items-center justify-center rounded-md border py-5 px-4 transition-all duration-300 last:mr-0 hover:border-gray-400 hover:text-black hover:shadow-lg md:mr-2 md:mb-0 md:w-1/2 md:last:ml-2'>
+      className='mb-4 ml-0 flex w-full flex-col items-center justify-center rounded-md border py-5 px-4 transition-all duration-300 last:mr-0 hover:border-gray-400 hover:text-black hover:shadow-lg md:mr-2 md:mb-0 md:w-1/2 md:last:ml-2'
+    >
       <div className='mb-5 text-2xl'>
         <Icon className='' />
       </div>
@@ -44,4 +45,4 @@ const Contact: NextPage = () => {
   );
 };
 
-export default Contact
+export default Contact;

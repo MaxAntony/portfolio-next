@@ -1,6 +1,6 @@
-import { FC } from "react";
-import { Copyright } from "./Copyright";
-import { SocialLinks } from "./SocialLinks";
+import { FC } from 'react';
+import { Copyright } from './Copyright';
+import { SocialLinks } from './SocialLinks';
 
 export const Footer: FC = () => {
   return (
@@ -12,6 +12,5 @@ export const Footer: FC = () => {
         <SocialLinks />
       </div>
     </div>
-
-  )
-}
+  );
+};

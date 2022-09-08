@@ -1,21 +1,14 @@
-import type { NextPage } from 'next'
+import type { NextPage } from 'next';
 import Link from 'next/link';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
 const Home: NextPage = () => {
   const { text: typewriter } = useTypewriter({
-    words: [
-      'Tiendas virtuales',
-      'Sistemas',
-      'Paginas Web',
-      'Marketing digital',
-      'Publicidad en redes sociales',
-      'Diseño de posts',
-    ],
+    words: ['Tiendas virtuales', 'Sistemas', 'Paginas Web', 'Marketing digital', 'Publicidad en redes sociales', 'Diseño de posts'],
     loop: 0,
     typeSpeed: 70,
-    deleteSpeed: 25
-  })
+    deleteSpeed: 25,
+  });
   return (
     <div className={`absolute top-0 bottom-0 flex pl-5 lg:pl-24`}>
       <div className='flex items-center'>
@@ -35,9 +28,7 @@ const Home: NextPage = () => {
           </p>
           <div className='uppercase '>
             <Link href='/contact'>
-              <a
-                className='inline-block border border-gray-700 py-2 px-7 font-semibold text-gray-700 transition-all duration-500 hover:bg-gray-700 hover:text-white'
-              >
+              <a className='inline-block border border-gray-700 py-2 px-7 font-semibold text-gray-700 transition-all duration-500 hover:bg-gray-700 hover:text-white'>
                 contacto
               </a>
             </Link>
@@ -45,7 +36,7 @@ const Home: NextPage = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

@@ -1,4 +1,4 @@
-export { }
+export { };
 
 class Workbox {
   constructor(scriptURL: string, registerOptions?: object);
@@ -9,7 +9,7 @@ class Workbox {
   getSW(): Promise<ServiceWorker>;
   messageSW(data: object): Promise<object>;
 
-  messageSkipWaiting(): void //https://github.com/GoogleChrome/workbox/issues/2394
+  messageSkipWaiting(): void; //https://github.com/GoogleChrome/workbox/issues/2394
   // https://developer.chrome.com/docs/workbox/reference/workbox-window/#method-Workbox-messageSkipWaiting
 
   addEventListener(event: 'message', callback: (data: IWorkboxEventMessage) => void): void;
@@ -23,7 +23,16 @@ class Workbox {
   addEventListener(event: 'externalactivated', callback: (data: IWorkboxEventExternal) => void): void;
 }
 
-type WorkboxEvent = 'message' | 'installed' | 'waiting' | 'controlling' | 'activated' | 'redundant' | 'externalinstalled' | 'externalwaiting' | 'externalactivated';
+type WorkboxEvent =
+  | 'message'
+  | 'installed'
+  | 'waiting'
+  | 'controlling'
+  | 'activated'
+  | 'redundant'
+  | 'externalinstalled'
+  | 'externalwaiting'
+  | 'externalactivated';
 
 interface IWorkboxEventBase {
   originalEvent: Event;
@@ -50,6 +59,6 @@ interface IWorkboxEventExternal extends IWorkboxEventBase {
 
 declare global {
   interface Window {
-    workbox: Workbox
+    workbox: Workbox;
   }
 }

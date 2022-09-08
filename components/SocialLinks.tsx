@@ -21,7 +21,8 @@ export const SocialLinks = () => {
           className=' text-xl text-gray-700 transition-all duration-300 hover:-translate-y-1 hover:text-black '
           rel='noreferrer'
           target='_blank'
-          title={link.title}>
+          title={link.title}
+        >
           {link.icon}
         </a>
       ))}
