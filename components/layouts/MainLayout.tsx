@@ -12,7 +12,7 @@ export const MainLayout: FC<props> = ({ children }) => {
     <div className='h-full w-screen bg-background font-poppins' id='MainLayout'>
       <Head>
         <title>Max Antony | Programacion y Marketing</title>
-        <meta name='description' content='Entusiasta tecnologico enfocado en crear soluciones' />
+        <meta name='description' content='Profesional informatico enfocado en crear soluciones usando tecnologias web' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
 

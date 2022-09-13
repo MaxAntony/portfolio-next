@@ -25,12 +25,12 @@ const About = () => {
             Tiendas Virtuales y paginas web.
           </p>
           <p className='mb-4'>
-            Tambien cuento con habilidades de diseño y marketing para la creacion de campañas en redes sociales para la visibilidad de la
-            marca a potenciales sus clientes.
+            Tambien cuento con habilidades de diseño y marketing para la creacion de campañas en redes sociales para la promocion de su
+            marca a potenciales clientes.
           </p>
           <p className=' '>
             Durante el tiempo que llevo trabajando he adquirido las habilidades y conocimientos para crear soluciones de alto impacto y
-            usando las ultimas tecnologias.
+            usando las ultimas y mejores tecnologias.
           </p>
         </div>
       </Section>
