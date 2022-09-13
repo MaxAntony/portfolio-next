@@ -35,14 +35,16 @@ export const Navbar: FC = () => {
       {/* MOVIL */}
       {/*backdrop*/}
       <div
-        className={`fixed inset-0 z-10 bg-black transition-opacity duration-300 ease-in-out ${menuOpen ? 'opacity-50' : ' pointer-events-none opacity-0'
-          } `}
+        className={`fixed inset-0 z-10 bg-black transition-opacity duration-300 ease-in-out ${
+          menuOpen ? 'opacity-50' : ' pointer-events-none opacity-0'
+        } `}
         onClick={() => setMenuOpen(false)}
       />
 
       <div
-        className={`fixed z-10 flex h-screen w-64 flex-col items-end border-l bg-white px-5 pt-20 transition-all lg:top-16 ${menuOpen ? 'right-0' : '-right-64'
-          }`}
+        className={`fixed z-10 flex h-full w-64 flex-col items-end border-l bg-white px-5 pt-20 transition-all lg:top-16 ${
+          menuOpen ? 'right-0' : '-right-64'
+        }`}
       >
         <div className='flex h-full w-full flex-col justify-between'>
           <div>
@@ -72,8 +74,9 @@ export const Navbar: FC = () => {
               <li key={path}>
                 <Link key={path} href={path}>
                   <a
-                    className={`cursor-pointer px-8 py-2 font-medium hover:text-white ${router.asPath === path ? 'bg-black text-white' : 'hover:bg-gray-700'
-                      }`}
+                    className={`cursor-pointer px-8 py-2 font-medium hover:text-white ${
+                      router.asPath === path ? 'bg-black text-white' : 'hover:bg-gray-700'
+                    }`}
                   >
                     {name}
                   </a>
