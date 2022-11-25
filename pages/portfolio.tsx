@@ -2,9 +2,10 @@ import { IProject } from '@ts/interfaces';
 import { pagesSpanish, projects } from '@utils/data';
 import { Section } from 'components/common/SectionLine';
 import Image from 'next/future/image';
+import Link from 'next/link';
 import { FC } from 'react';
 
-const Project: FC<{ project: IProject }> = ({ project }) => {
+const ProjectOverlaped: FC<{ project: IProject }> = ({ project }) => {
   return (
     <div className='group mb-24 '>
       <div className='grid grid-cols-11 items-center gap-2'>
@@ -26,13 +27,33 @@ const Project: FC<{ project: IProject }> = ({ project }) => {
     </div>
   );
 };
+const CardProject: FC<{ project: IProject }> = ({ project }) => {
+  return (
+    <div className='mt-8 min-h-[432px]'>
+      <div className='group relative '>
+        <div className='border-heading group-hover:turn-to-left absolute bottom-5 right-5 -z-10 h-full w-full border-4 transition-all duration-300'></div>
+        <Link href={'/portfolio'}>
+          <Image
+            src={project.image}
+            alt={project.title}
+            width={400}
+            height={400}
+            className='md:group-hover:turn-to-left border border-gray-200 transition-all duration-300'
+          />
+        </Link>
+      </div>
+      <h4 className='text-heading pt-5 text-xl font-bold lg:pt-8'>{project.title}</h4>
+      <span className='text-subtitle'>{project.shortDescription}</span>
+    </div>
+  );
+};
 
 const Portfolio = () => {
   return (
     <div className='px-5 pt-14 lg:px-24 lg:pt-24'>
       <Section title={pagesSpanish[2].name}>
         {projects.map((project, i) => (
-          <Project project={project} key={i} />
+          <CardProject project={project} key={i} />
         ))}
       </Section>
     </div>
