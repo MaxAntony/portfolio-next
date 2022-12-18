@@ -25,6 +25,7 @@ export enum links {
   telegram = 'tg://resolve?domain=maxpacami',
   email = 'mailto:maxpacami@gmail.com',
   github = 'https://github.com/MaxAntony',
+  youtube = 'https://www.youtube.com/@dot-max',
   phone = 'tel:+51997286267',
 }
 
