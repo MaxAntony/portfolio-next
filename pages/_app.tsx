@@ -3,6 +3,7 @@ import type { AppProps } from 'next/app';
 import { MainLayout } from 'components/layouts/MainLayout';
 import Head from 'next/head';
 import { useEffect } from 'react';
+import { GoogleAnalytics } from 'nextjs-google-analytics';
 
 function MyApp({ Component, pageProps }: AppProps) {
   // This hook only run once in browser after the component is rendered for the first time.
@@ -105,6 +106,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel='manifest' href='/manifest.json' />
         <link rel='shortcut icon' href='/favicon.ico' />
       </Head>
+      <GoogleAnalytics trackPageViews />
       <MainLayout>
         <Component {...pageProps} />
       </MainLayout>
