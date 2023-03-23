@@ -28,7 +28,10 @@ const Home: NextPage = () => {
           </p>
           <div className='uppercase '>
             <Link href='/contact'>
-              <a className='inline-block border border-gray-700 py-2 px-7 font-semibold text-gray-700 transition-all duration-500 hover:bg-gray-700 hover:text-white'>
+              <a
+                className={`inline-block border border-gray-700 py-2 px-7 font-semibold
+              text-gray-700 transition-all duration-500 hover:bg-gray-700 hover:text-white`}
+              >
                 contacto
               </a>
             </Link>
