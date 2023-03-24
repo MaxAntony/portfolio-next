@@ -1,6 +1,7 @@
 import { IProject } from '@ts/interfaces';
 import { pagesSpanish, projects } from '@utils/data';
 import { Section } from 'components/common/SectionLine';
+import { NextSeo } from 'next-seo';
 import Image from 'next/future/image';
 import { FC } from 'react';
 
@@ -41,13 +42,16 @@ const Project: FC<{ project: IProject }> = ({ project }) => {
 
 const Portfolio = () => {
   return (
-    <div className='px-5 pt-14 lg:px-24 lg:pt-24'>
-      <Section title={pagesSpanish[2].name}>
-        {projects.map((project, i) => (
-          <Project project={project} key={i} />
-        ))}
-      </Section>
-    </div>
+    <>
+      <NextSeo title='Mis Trabajos' description='Un breve vistazo de mis mejores trabajos' />
+      <div className='px-5 pt-14 lg:px-24 lg:pt-24'>
+        <Section title={pagesSpanish[2].name}>
+          {projects.map((project, i) => (
+            <Project project={project} key={i} />
+          ))}
+        </Section>
+      </div>
+    </>
   );
 };
 

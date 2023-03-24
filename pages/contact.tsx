@@ -1,6 +1,7 @@
 import { links } from '@utils/data';
 import { Section } from 'components/common/SectionLine';
 import { NextPage } from 'next';
+import { NextSeo } from 'next-seo';
 import { FC } from 'react';
 import { IconType } from 'react-icons';
 import { IoMdMail, IoLogoWhatsapp } from 'react-icons/io';
@@ -31,20 +32,23 @@ const data: CardProps[] = [
 
 const Contact: NextPage = () => {
   return (
-    <div className='px-5 pt-14 lg:px-24 lg:pt-24'>
-      <Section title='Contacto'>
-        <div className='mb-5 text-center font-medium'>
-          <p className='mb-3'>¿Tienes preguntas o un proyecto en mente?</p>
-          <p className='font-semibold'>Contactame:</p>
-        </div>
-        <div className=' flex flex-col md:flex-row'>
-          {data.map((card, i) => (
-            <Card Icon={card.Icon} content={card.content} link={card.link} key={i} />
-          ))}
-        </div>
-        <div></div>
-      </Section>
-    </div>
+    <>
+      <NextSeo title='Contacto' description='¿Tienes preguntas o un proyecto en mente?' />
+      <div className='px-5 pt-14 lg:px-24 lg:pt-24'>
+        <Section title='Contacto'>
+          <div className='mb-5 text-center font-medium'>
+            <p className='mb-3'>¿Tienes preguntas o un proyecto en mente?</p>
+            <p className='font-semibold'>Contactame:</p>
+          </div>
+          <div className=' flex flex-col md:flex-row'>
+            {data.map((card, i) => (
+              <Card Icon={card.Icon} content={card.content} link={card.link} key={i} />
+            ))}
+          </div>
+          <div></div>
+        </Section>
+      </div>
+    </>
   );
 };
 
