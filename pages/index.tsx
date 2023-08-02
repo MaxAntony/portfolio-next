@@ -4,7 +4,7 @@ import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
 const Home: NextPage = () => {
   const { text: typewriter } = useTypewriter({
-    words: ['Tiendas virtuales', 'Sistemas', 'Paginas Web', 'Marketing digital', 'Publicidad en redes sociales', 'Diseño de posts'],
+    words: ['Sistemas', 'Paginas Web', 'Tiendas virtuales'],
     loop: 0,
     typeSpeed: 70,
     deleteSpeed: 25,

@@ -20,10 +20,7 @@ const ServicesList: FC<{ services: string[] }> = ({ services }) => {
 const About: NextPage = () => {
   return (
     <>
-      <NextSeo
-        title='Mis Servicios'
-        description='Creacion de Sistemas, Tiendas Virtuales, Paginas Web, Marketing Digital para Redes Sociales'
-      />
+      <NextSeo title='Mis Servicios' description='Creacion de Sistemas y Paginas Web' />
       <div className='flex flex-col px-5 pt-14 lg:px-24 lg:pt-24 '>
         <Section title='Acerca de mi'>
           <div className=' leading-6 text-fontsoft'>
@@ -31,22 +28,18 @@ const About: NextPage = () => {
               ¡Hola! 🤓 Mi nombre es <strong>Max Antony</strong>. Soy Desarrollador de software especializado en la creacion de Sistemas,
               Tiendas Virtuales y paginas web.
             </p>
-            <p className='mb-4'>
-              Tambien cuento con habilidades de diseño y marketing para la creacion de campañas en redes sociales para la promocion de su
-              marca a potenciales clientes.
-            </p>
             <p className=' '>
               Durante el tiempo que llevo trabajando he adquirido las habilidades y conocimientos para crear soluciones de alto impacto y
               usando las ultimas y mejores tecnologias.
             </p>
           </div>
         </Section>
-        <Section title='Servicios Tecnologicos'>
-          <ServicesList services={['Creacion de Tiendas Online', 'Creacion de Paginas Web', 'Creacion de Sistemas']} />
+        <Section title='Desarrollador Web FullStack'>
+          <ServicesList services={['Typescript', 'Next.js', 'React.js', 'Nest.js', 'PostgreSQL', 'GraphQL']} />
         </Section>
-        <Section title='Servicios Creativos'>
-          <ServicesList services={['Gestion de Redes Sociales', 'Diseño de Posts', 'Marketing Digital', 'Community Manager']} />
-        </Section>
+        {/* <Section title='Servicios Creativos'> */}
+        {/*   <ServicesList services={['Gestion de Redes Sociales', 'Diseño de Posts', 'Marketing Digital', 'Community Manager']} /> */}
+        {/* </Section> */}
         {/* <Section title='Experiencia'>lorem</Section> */}
       </div>
     </>

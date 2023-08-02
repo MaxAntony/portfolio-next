@@ -94,7 +94,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           },
           {
             name: 'keywords',
-            content: 'Max Antony, Paucar Ramirez, Huancayo, Junin, Peru, Programacion, Desarrollador, Sistemas, Paginas web, Marketing',
+            content: 'Max Antony, Paucar Ramirez, Huancayo, Junin, Peru, Programacion, Desarrollador, Sistemas, Paginas web',
           },
           {
             name: 'format-detection',
