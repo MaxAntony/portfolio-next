@@ -21,6 +21,7 @@ export const pagesSpanish = [
 ];
 
 export enum links {
+  facebook = 'https://www.facebook.com/devexception/',
   whatsapp = 'https://api.whatsapp.com/send?phone=51997286267&text=Hola%20Max,%20quisiera%20hablar%20sobre%20un%20proyecto%20',
   telegram = 'tg://resolve?domain=maxpacami',
   email = 'mailto:maxpacami@gmail.com',

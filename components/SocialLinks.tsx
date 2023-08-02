@@ -1,10 +1,11 @@
 import { links } from '@utils/data';
 import { Fragment } from 'react';
-import { FaTelegramPlane, FaGithubAlt, FaYoutube } from 'react-icons/fa';
+import { FaTelegramPlane, FaGithubAlt, FaYoutube, FaFacebook } from 'react-icons/fa';
 import { IoMdMail, IoLogoWhatsapp } from 'react-icons/io';
 
 type AuthorLink = { url: string; icon: JSX.Element; title: string };
 const authorLinks: AuthorLink[] = [
+  { url: links.facebook, icon: <FaFacebook />, title: 'facebook' },
   { url: links.whatsapp, icon: <IoLogoWhatsapp />, title: 'whatsapp' },
   { url: links.email, icon: <IoMdMail />, title: 'correo' },
   { url: links.telegram, icon: <FaTelegramPlane />, title: 'telegram' },
